@@ -1,3 +1,4 @@
+
 def lowerSalaryNoAgeImpute(df):
     """
     This function will replace any NaN Age value that also has a Monthly income of less than 19000 with the mean age of the partitioned data that has an income less than 19000. 
