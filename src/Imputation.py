@@ -1,5 +1,6 @@
+import pandas as pd
 
-def lowerSalaryNoAgeImpute(df):
+def lowerSalaryNoAgeImpute(X):
     """
     This function will replace any NaN Age value that also has a Monthly income of less than 19000 with the mean age of the partitioned data that has an income less than 19000. 
 
@@ -9,14 +10,17 @@ def lowerSalaryNoAgeImpute(df):
     Returns:
         dataframe: Dataframe with some Age NaN values replaced based on their monthly income being less than 19000
     """
+    df = pd.DataFrame(X)
 
-    low_income_age = round(df[df['MonthlyIncome'] > 19000]['Age'].mean(), 0)
+    low_income_age = round(df[df[6] > 19000][0].mean(), 0)
 
-    mask =  (df['Age'].isna()) & (df['MonthlyIncome'] < 19000)    
+    mask =  (df[0].isna()) & (df[6] < 19000)    
 
-    df.loc[mask,'Age'] = low_income_age
+    df.loc[mask,0] = low_income_age
     
-    return df
+    X = df.values
+
+    return X
 
 
 def designationAverageAgeCalulation(df):
