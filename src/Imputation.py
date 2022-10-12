@@ -92,3 +92,58 @@ def AgeNoMonthlyIncomeImputation(df):
          df.loc[mask,'MonthlyIncome'] =income_by_age['median'].loc[index]
     
      return df
+    
+def medianPreferredPropertyStarImputation(df):
+    """
+    This function will impute all the NaN values in PerferredPropertyStar feature to the median value for the feature. 
+
+    Args:
+        df (dataframe): the partitioned dataframe for tourism
+
+    Returns:
+        dataframe: the same dataframe that was input, except with the NaN for PreferredPropertyStar filled in
+    """
+
+    median_PPS = df['PreferredPropertyStar'].median()
+
+    mask = (df['PreferredPropertyStar'].isna())    
+    df.loc[mask,'PreferredPropertyStar'] = median_PPS
+
+    return df
+
+def NumberOfTripsImputation(df):
+    """
+    This function will use the general median of Number of Trips to impute the NaNs. 
+
+    Args:
+        df (dataframe): partitioned dataframe based on training split
+
+    Returns:
+        dataframe: the NaNs in NumberOfTrips will have been replaced with the median values for this feature
+    """
+
+
+    median_trips = df['NumberOfTrips'].median()
+    
+    mask = (df['NumberOfTrips'].isna())    
+    df.loc[mask,'NumberOfTrips'] = median_trips
+
+    return df
+
+def missingChildrenImputation(df):
+    """
+    This function will replace any NaN values in the Number of Children Feature with the median value for the partitioned dataset
+
+    Args:
+        df (dataframe): partitioned dataframe based on train test split
+
+    Returns:
+        dataframe: returned dataframe that no longer has any NaNs in the Number of Children feature
+    """
+
+    median_children = df['NumberOfChildrenVisiting'].median()
+    
+    mask = (df['NumberOfChildrenVisiting'].isna())    
+    df.loc[mask,'NumberOfChildrenVisiting'] = median_children
+
+    return df
