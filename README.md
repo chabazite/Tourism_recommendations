@@ -107,6 +107,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <details>
 <summary>Show/Hide</summary>
 <br>
+  
 ### Data Cleaning
 * No duplicates were found
 * Outliers were found in: DurationOfPitch, NumberOfTrips, and MonthlyIncome
@@ -123,6 +124,8 @@ Occupation
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
 <br>
+  - The Occupation feature isn’t very explanatory, the categories within are confusing and imbalance. It will be removed during feature selection.
+<br>
 Designations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Designation.png">
@@ -131,7 +134,6 @@ Products Pitched
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 <br>
-
 Designation and Product Pitched
  - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
  - This means every time, for example, an Executive was pitched a product it was Basic.
@@ -141,17 +143,23 @@ Designation and Product Pitched
 Correlations
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Correlation.png">
 <br>
+  - NumberOfChildrenVisiting and NumberOfPersonVisiting have a correlation. This may indication children are included in the person visiting feature and may be removed in our model.
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
-
+<br>
+  - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
+ <br>
 Product Accepted vs. Rejected
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken_Line.png">
-
+<br>
+  - There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
+  
 Product Recommendations
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPP.png">
-
+  - Age and Income clearly play a role in which package was recommended, as seen in the significance testing. It didn't, however, have an impact on whether the recommendation was accepted or not.
 
 ### Model Performance
 
