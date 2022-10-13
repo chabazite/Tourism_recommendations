@@ -149,15 +149,15 @@ Correlations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
 <br>
-  - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
- <br>
+  * There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
+<br>
 Product Accepted vs. Rejected
-  <br>
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgevPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken_Line.png">
 <br>
-  - There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
+  * There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
 <br>
 Product Recommendations
 <br>
