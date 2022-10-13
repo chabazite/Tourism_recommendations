@@ -213,10 +213,10 @@ You can see the improvement in the confusion matrix.
 
  1. Go back to the source of the information and uncover issues with unclear features to improve the data gathered and future model.
  2. Dive deeper into feature selection. 
- 3. Try different models for classification (KNeighbor, RandomForest, etc.)
- 4. Train with more hyperparameters 
- 5. Use Deep Learning models if warranted by budget and improvement
- 6. Create API for easier access and interpretability of model
+ 3. Try different models for classification (KNeighbor, RandomForest, etc.).
+ 4. Train with more hyperparameters .
+ 5. Use Deep Learning models if warranted by budget and improvement.
+ 6. Create API for easier access and interpretability of model.
  
 
 </details>
