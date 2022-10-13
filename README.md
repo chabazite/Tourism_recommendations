@@ -179,7 +179,7 @@ Our model will be multi-class Classification. XGBoost was choosen for its robust
     4. The hyperparameters have shown, when tweaked, to provide impressive model performance
 
 #### Metric
-The metric best suited for this project is a  F1_macro score. 
+The metric best suited for this project is a  F1_macro score.
     1. Since we have a high class imbalance, F1 scores are the right choice for our metric as it considers both precision and recall.
     2. The choice between weighted, micro, and macro is also important. While weighted would give us more consideration to the basic package, since it had more occurances, macro would give us equal consideration to all packages. Micro would be a better choice if we had a balanced dataset.
 
@@ -192,8 +192,9 @@ This confusion matrix helps to visualize how our model predicted vs. what the ac
 #### Improvements
 After the baseline model was trained, we went into feature selection. A lot of times there are features that don't provide any input to the model, these can be removed as they just bulk the model for no reason. Other times, there are features that are highly correlated to other features. For example, Gender_Male and Gender_Female. This project considers them binary features. If you are male, you are not female, and vice versa. That means the model only needs one of the two features to inform it of gender. This is known as multicollinearity. After feature selection, I trained and tested the model to ensure no drop in performance. The F1_macro was stil **78%**.
 <br>
-Finally, I used GridSearchCV to help quickly and systematically test a series of hyperparameters for XGBoost in order to improve performance.
-
+  1. I used GridSearchCV to help quickly and systematically test a series of hyperparameters for XGBoost in order to improve performance.
+  2. When GridSearchCV didn't provide the results I desired, I switched to RandomSearchCV. Sometimes the hyperparameter tuning library is impacted by the type of algorithm you use. 
+  
 #### Comparison
 With this new model trained and cross-validated, I show a F1_macro score of **79%**. There is definitely more improvement to be made on this model, but for a system that had a 18% record of success, a model that 79% of the time provides a good insight into the correct product, is a huge improvement
 <br>
