@@ -122,13 +122,13 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 
 #### Univariate Analaysis
 Occupation
-<img src="..\reports\figures\Occupation.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
 
 Designations
-<img src="..\reports\figures\Designations.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Designations.png">
 
 Products Pitched
-<img src="..\reports\figures\ProductPitched.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 
 Designation and Product Pitched
  - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
@@ -137,17 +137,17 @@ Designation and Product Pitched
 
 #### Bivariate Analaysis
 Correlations
-<img src="..\reports\figures\Correlation.png">
-<img src="..\reports\figures\AgeVIncome.png">
-
-Product Accepted vs. Rejected
-<img src="..\reports\figures\AgeVPTaken.png">
-<img src="..\reports\figures\IncomeVPTaken.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Correlation.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
 
+Product Accepted vs. Rejected
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVPTaken.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken_Line.png">
+
 Product Recommendations
-<img src="..\reports\figures\AgeVProductPitched.png">
-<img src="..\reports\figures\IncomeVPP.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPP.png">
 
 
 ### Model Performance
@@ -168,7 +168,7 @@ The metric best suited for this project is a  F1_macro score.
 Using my custom Transformers, I created a sklearn pipeline to preprocess the data before feeding into our model. This helps protect against data leakage. Our F1_macro score was **78%**. This was cross-validated. Not a bad score for a base model with a small dataset. 
 <br>
 This confusion matrix helps to visualize how our model predicted vs. what the actual results were. 
-<img src="..\reports\figures\base_CM.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/base_CM.png">
 
 #### Improvements
 After the baseline model was trained, we went into feature selection. A lot of times there are features that don't provide any input to the model, these can be removed as they just bulk the model for no reason. Other times, there are features that are highly correlated to other features. For example, Gender_Male and Gender_Female. This project considers them binary features. If you are male, you are not female, and vice versa. That means the model only needs one of the two features to inform it of gender. This is known as multicollinearity. After feature selection, I trained and tested the model to ensure no drop in performance. The F1_macro was stil **78%**.
@@ -176,10 +176,10 @@ After the baseline model was trained, we went into feature selection. A lot of t
 Finally, I used GridSearchCV to help quickly and systematically test a series of hyperparameters for XGBoost in order to improve performance.
 
 #### Comparison
-With this new model trained and cross-validated, I show a F1_macro score of **82%**. 
+With this new model trained and cross-validated, I show a F1_macro score of **79%**. 
 <br>
 You can see the improvement in the confusion matrix.
-<img src="..\reports\figures\base_CM.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/base_CM.png">
 
 
 </details>
