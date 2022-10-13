@@ -176,10 +176,10 @@ After the baseline model was trained, we went into feature selection. A lot of t
 Finally, I used GridSearchCV to help quickly and systematically test a series of hyperparameters for XGBoost in order to improve performance.
 
 #### Comparison
-With this new model trained and cross-validated, I show a F1_macro score of **79%**. 
+With this new model trained and cross-validated, I show a F1_macro score of **79%**. There is definitely more improvement to be made on this model, but for a system that had a 18% record of success, a model that 79% of the time provides a good insight into the correct product, is a huge improvement
 <br>
 You can see the improvement in the confusion matrix.
-<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/base_CM.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/best_fit_CM.png">
 
 
 </details>
