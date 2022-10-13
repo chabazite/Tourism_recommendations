@@ -107,7 +107,6 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <details>
 <summary>Show/Hide</summary>
 <br>
-
 ### Data Cleaning
 * No duplicates were found
 * Outliers were found in: DurationOfPitch, NumberOfTrips, and MonthlyIncome
@@ -117,19 +116,22 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
     *  For the remaining five, I created functions of the imputation methods for each feature, specific to the data presented. 
     *  **Notable:** Age and MonthlyIncome were able to use each other to fill in missing information for more accurate representation of the data. Other features used median or mean of the entire feature for imputation.
 
-
 ### Exploritory Data Analysis
 
 #### Univariate Analaysis
 Occupation
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
 <br>
 Designations
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Designation.png">
 <br>
 Products Pitched
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 <br>
+
 Designation and Product Pitched
  - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
  - This means every time, for example, an Executive was pitched a product it was Basic.
