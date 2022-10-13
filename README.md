@@ -173,17 +173,15 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 
 #### Model
 Our model will be multi-class Classification. XGBoost was choosen for its robust nature and high quality average performance. There are 4 main reasons for this:
-  <br>
-    1. Ensemble models generally outperform individual models
-    2. Boosting generally outperforms bagging (RandomForest)
-    3. The default model provides for regularization to protect against overfitting
-    4. The hyperparameters have shown, when tweaked, to provide impressive model performance
+ 1. Ensemble models generally outperform individual models
+ 2. Boosting generally outperforms bagging (RandomForest)
+ 3. The default model provides for regularization to protect against overfitting
+ 4. The hyperparameters have shown, when tweaked, to provide impressive model performance
 
 #### Metric
 The metric best suited for this project is a  F1_macro score.
-  <br>
-    1. Since we have a high class imbalance, F1 scores are the right choice for our metric as it considers both precision and recall.
-    2. The choice between weighted, micro, and macro is also important. While weighted would give us more consideration to the basic package, since it had more occurances, macro would give us equal consideration to all packages. Micro would be a better choice if we had a balanced dataset.
+ 1. Since we have a high class imbalance, F1 scores are the right choice for our metric as it considers both precision and recall.
+ 2. The choice between weighted, micro, and macro is also important. While weighted would give us more consideration to the basic package, since it had more occurances, macro would give us equal consideration to all packages. Micro would be a better choice if we had a balanced dataset.
 
 #### Baseline
 Using my custom Transformers, I created a sklearn pipeline to preprocess the data before feeding into our model. This helps protect against data leakage. Our F1_macro score was **78%**. This was cross-validated. Not a bad score for a base model with a small dataset. 
