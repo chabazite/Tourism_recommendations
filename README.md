@@ -173,6 +173,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 
 #### Model
 Our model will be multi-class Classification. XGBoost was choosen for its robust nature and high quality average performance. There are 4 main reasons for this:
+  <br>
     1. Ensemble models generally outperform individual models
     2. Boosting generally outperforms bagging (RandomForest)
     3. The default model provides for regularization to protect against overfitting
@@ -180,6 +181,7 @@ Our model will be multi-class Classification. XGBoost was choosen for its robust
 
 #### Metric
 The metric best suited for this project is a  F1_macro score.
+  <br>
     1. Since we have a high class imbalance, F1 scores are the right choice for our metric as it considers both precision and recall.
     2. The choice between weighted, micro, and macro is also important. While weighted would give us more consideration to the basic package, since it had more occurances, macro would give us equal consideration to all packages. Micro would be a better choice if we had a balanced dataset.
 
@@ -196,9 +198,10 @@ After the baseline model was trained, we went into feature selection. A lot of t
   2. When GridSearchCV didn't provide the results I desired, I switched to RandomSearchCV. Sometimes the hyperparameter tuning library is impacted by the type of algorithm you use. 
   
 #### Comparison
-With this new model trained and cross-validated, I show a F1_macro score of **79%**. There is definitely more improvement to be made on this model, but for a system that had a 18% record of success, a model that 79% of the time provides a good insight into the correct product, is a huge improvement
+With this new model trained and cross-validated, I show a F1_macro score of **79%**. There is definitely more improvement to be made on this model, but for a system that had a 18% record of success, a model that 79% of the time provides a good insight into the correct product, is a huge improvement.
 <br>
 You can see the improvement in the confusion matrix.
+  <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/best_fit_CM.png">
 
 
