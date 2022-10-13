@@ -126,22 +126,22 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <br>
   - The Occupation feature isn’t very explanatory, the categories within are confusing and imbalance. It will be removed during feature selection.
 <br>
-Designations
+##### Designations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Designation.png">
 <br>
-Products Pitched
+##### Products Pitched
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 <br>
   
-Designation and Product Pitched
+##### Designation and Product Pitched
   - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
   - This means every time, for example, an Executive was pitched a product it was Basic.
   - This category is not suited for modeling as it will give us 100% accuracy but no insights.
 
 #### Bivariate Analaysis
-Correlations
+##### Correlations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Correlation.png">
 <br>
@@ -152,7 +152,7 @@ Correlations
   
   - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
 <br>
-Product Accepted vs. Rejected
+##### Product Accepted vs. Rejected
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgevPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken.png">
@@ -161,7 +161,7 @@ Product Accepted vs. Rejected
   
   - There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
 <br>
-Product Recommendations
+##### Product Recommendations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPP.png">
