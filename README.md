@@ -149,7 +149,8 @@ Correlations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
 <br>
-  * There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
+  
+  - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
 <br>
 Product Accepted vs. Rejected
 <br>
@@ -165,6 +166,7 @@ Product Recommendations
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPP.png">
 <br>
+  
   - Age and Income clearly play a role in which package was recommended, as seen in the significance testing. It didn't, however, have an impact on whether the recommendation was accepted or not.
 
 ### Model Performance
