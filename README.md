@@ -133,7 +133,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 ##### Products Pitched
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
-<br>
+
 
 ##### Designation and Product Pitched
   - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
@@ -151,7 +151,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <br>
   
   - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
-<br>
+
 ##### Product Accepted vs. Rejected
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgevPTaken.png">
@@ -160,7 +160,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <br>
   
   - There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
-<br>
+
 ##### Product Recommendations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
