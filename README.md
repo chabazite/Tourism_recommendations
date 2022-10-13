@@ -123,7 +123,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 ##### Occupation
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
-<br>
+
   - The Occupation feature isn’t very explanatory, the categories within are confusing and imbalance. It will be removed during feature selection.
 
 ##### Designations
@@ -144,7 +144,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 ##### Correlations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Correlation.png">
-<br>
+
   - NumberOfChildrenVisiting and NumberOfPersonVisiting have a correlation. This may indication children are included in the person visiting feature and may be removed in our model.
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
