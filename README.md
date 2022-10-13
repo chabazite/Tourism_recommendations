@@ -120,7 +120,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 ### Exploritory Data Analysis
 
 #### Univariate Analaysis
-Occupation
+  <u>Occupation</u>
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
 <br>
