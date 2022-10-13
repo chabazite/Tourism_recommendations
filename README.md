@@ -125,11 +125,11 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Occupation.png">
 <br>
   - The Occupation feature isn’t very explanatory, the categories within are confusing and imbalance. It will be removed during feature selection.
-<br>
+
 ##### Designations
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Designation.png">
-<br>
+
 ##### Products Pitched
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
