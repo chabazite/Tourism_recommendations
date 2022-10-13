@@ -134,13 +134,15 @@ Products Pitched
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 <br>
+  
 Designation and Product Pitched
- - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
- - This means every time, for example, an Executive was pitched a product it was Basic.
- - This category is not suited for modeling as it will give us 100% accuracy but no insights.
+  - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
+  - This means every time, for example, an Executive was pitched a product it was Basic.
+  - This category is not suited for modeling as it will give us 100% accuracy but no insights.
 
 #### Bivariate Analaysis
 Correlations
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/Correlation.png">
 <br>
   - NumberOfChildrenVisiting and NumberOfPersonVisiting have a correlation. This may indication children are included in the person visiting feature and may be removed in our model.
@@ -150,13 +152,15 @@ Correlations
   - There is a decent correlation with the mean average of MonthlyIncome and Age. This may need to be addressed during feature selection.
  <br>
 Product Accepted vs. Rejected
-<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVPTaken.png">
+  <br>
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgevPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken_Line.png">
 <br>
   - There wasn't any big insights with how products were accepted vs. rejected when looking at the customer profile.
   
 Product Recommendations
+<br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVProductPitched.png">
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPP.png">
   - Age and Income clearly play a role in which package was recommended, as seen in the significance testing. It didn't, however, have an impact on whether the recommendation was accepted or not.
