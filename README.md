@@ -134,7 +134,7 @@ The `Tourism.xlsx` file contains the last year of customer data at a travel pack
 <br>
 <img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/ProductPitched.png">
 <br>
-  
+
 ##### Designation and Product Pitched
   - When grouping designations against the product pitched category, I see that it is a 1 to 1 match. 
   - This means every time, for example, an Executive was pitched a product it was Basic.
