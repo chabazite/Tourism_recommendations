@@ -143,7 +143,7 @@ Correlations
 Product Accepted vs. Rejected
 <img src="..\reports\figures\AgeVPTaken.png">
 <img src="..\reports\figures\IncomeVPTaken.png">
-<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/AgeVIncome.png">
+<img src="https://github.com/chabazite/Tourism_recommendations/blob/main/reports/figures/IncomeVPTaken_Line.png">
 
 Product Recommendations
 <img src="..\reports\figures\AgeVProductPitched.png">
